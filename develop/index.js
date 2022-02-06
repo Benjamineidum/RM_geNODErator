@@ -206,7 +206,18 @@ const questions = () => {
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+questions()
+    .then(answers => {
+        const pageMarkdown = generateMarkdown(answers);
+
+        // TODO: Create a function to write README file
+        fs.writeFile('./dist/README.md', pageMarkdown, err => {
+            if (err) throw err;
+
+            console.log('README complete! Check out README.MD to see the output!');
+        });
+
+    });
 
 // TODO: Create a function to initialize app
 function init() {}
