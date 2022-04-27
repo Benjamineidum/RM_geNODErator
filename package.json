@@ -1,5 +1,5 @@
 {
-  "name": "readme-generator",
+  "name": "rm-geNODErator",
   "version": "1.0.0",
   "description": "Application to generate a README file using node.js and user input",
   "main": "index.js",
@@ -15,6 +15,6 @@
 
   "homepage": "https://benjamineidum.github.io/RM_geNODErator/",
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "inquirer": "^8.2.3"
   }
 }
